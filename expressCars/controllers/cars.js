@@ -78,7 +78,7 @@ exports.updateCar = async (req, res, next) => {
 };
 exports.deleteCar = async (req, res, next) => {
     try {
-        const result = await Car.findByIdAndDelete(req.params.id, data);
+        const result = await Car.findByIdAndDelete(req.params.id);
         if (result) {
             return res.status(200).send({
                 message: "car deleted",
