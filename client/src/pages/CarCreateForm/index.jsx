@@ -34,9 +34,10 @@ export default function CarCreateForm() {
         <input type="text" name="brand" required placeholder="Enter brand" onChange={handleChange}/>
         <input type="text" name="color" required placeholder="Enter color" onChange={handleChange}/>
         <input type="number" name="price" required placeholder="Enter price" onChange={handleChange}/>
-        <button onClick={handlePost}>
+        <Link to={"/created-car"}><button onClick={handlePost}>
           Add Car
-        </button>
+        </button></Link>
+        
       </form>
       <p>{info}</p>
       <Link to={"/"}>

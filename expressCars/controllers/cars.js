@@ -89,6 +89,6 @@ exports.deleteCar = async (req, res, next) => {
             message: "cat not deleted",
         })
   } catch (err) {
-    res.staus(500).send(err);
+    res.status(500).send(err);
   }
 };
