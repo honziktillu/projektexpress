@@ -41,7 +41,7 @@ export default function CarList() {
 
   return (
     <>
-      <h1>Car list</h1>
+      <h1>Car list XD</h1>
       {
         cars.map((car, index) => (
           <CarLink key={index} {...car}/>
